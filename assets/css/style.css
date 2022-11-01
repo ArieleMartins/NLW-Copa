@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -10,7 +12,9 @@ body{
     background-position-x: center;
     background-position-y: 55%;
 }
-
+body *{
+    font-family: 'Roboto', sans-serif;
+}
 #app{
     width: fit-content; /* encaixa o conteudo no container*/
     margin: 52px auto;
@@ -24,15 +28,48 @@ h2{
     padding: 8px 16px;
     border-radius: 6px;
     display: flex;
-    column-gap: 20px;
+    gap: 16px;
+    justify-content: center;
+    width: fit-content;
+    margin-inline: auto;
+    color: #F7DD43;
+    align-items: center;
+}
+h2 span{
+    color: #E1E1E6;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.card ul{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card ul li + li{ /* adicione se tiver mais um li*/
+    padding-top: 24px;
+    border-top: 1px solid #323238 ;
+}
+
+.card ul li strong{
+    color: #E1E1E6;
+    font-size: 36px;
+    line-height: 125%;
+    font-weight: 900;
 }
 
 .card{
     padding: 32px 23px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 32px;
+    row-gap: 53px;
     background-color: #1d1c19;
     border-bottom: 2px solid #D0647E;
     border-radius: 6px;
