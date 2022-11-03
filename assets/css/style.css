@@ -66,6 +66,7 @@ h2 span{
 }
 
 .card{
+    width: 270px;
     padding: 32px 23px;
     display: flex;
     flex-direction: column;
@@ -73,4 +74,17 @@ h2 span{
     background-color: #1d1c19;
     border-bottom: 2px solid #D0647E;
     border-radius: 6px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    justify-content: center;
 }
